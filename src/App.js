@@ -10,7 +10,7 @@ function App() {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.loading);
 
-  const [searchValue, setSearchValue] = React.useState("")
+  const [searchValue, setSearchValue] = React.useState("");
 
   React.useEffect(() => {
     dispatch(loadItems());
@@ -22,7 +22,7 @@ function App() {
     return (
       <div className="main-wrapper">
         <Header searchValue={searchValue} setSearchValue={setSearchValue} />
-        <Body searchValue={searchValue}  />
+        <Body searchValue={searchValue} />
         <Footer />
       </div>
     );

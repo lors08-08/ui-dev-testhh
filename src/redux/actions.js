@@ -11,10 +11,10 @@ export function loadItems() {
           payload: data,
         });
       })
-      .catch((e)=>{
+      .catch((e) => {
         dispatch({
-          type:"items/load/error"
-        })
+          type: "items/load/error",
+        });
       });
   };
 }

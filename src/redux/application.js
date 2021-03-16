@@ -1,7 +1,6 @@
 const initialState = {
   loading: false,
-  items:[]
-
+  items: [],
 };
 
 function application(state = initialState, action) {
@@ -9,19 +8,19 @@ function application(state = initialState, action) {
     case "items/load/start":
       return {
         ...state,
-        loading: true
-      }
+        loading: true,
+      };
     case "items/load/succeed":
       return {
         ...state,
         loading: false,
-        items: action.payload
-      }
+        items: action.payload,
+      };
     case "items/load/error":
       return {
         ...state,
-        loading:true
-      }
+        loading: true,
+      };
     default:
       return state;
   }
