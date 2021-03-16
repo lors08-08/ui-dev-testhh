@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import { useDispatch, useSelector } from "react-redux";
+import { loadItems } from "./redux/actions";
+import Loader from "./components/Loader";
+import Body from "./components/Body/index";
+import Footer from "./components/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const dispatch = useDispatch();
+  const loading = useSelector((state) => state.loading);
+
+  const [searchValue, setSearchValue] = React.useState("")
+
+  React.useEffect(() => {
+    dispatch(loadItems());
+  }, [dispatch]);
+
+  if (loading) {
+    return <Loader />;
+  } else {
+    return (
+      <div className="main-wrapper">
+        <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+        <Body searchValue={searchValue}  />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

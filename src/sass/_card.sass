@@ -1,0 +1,54 @@
+.card-wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 7px
+.card
+  width: 444px ///579
+  margin-top: 38px
+  min-height: 381px
+  max-height: 401px
+  background-color: #F8F8F8
+  border: 1px solid #D8D8D8
+  display: flex
+  flex-wrap: wrap
+  &-description
+    padding: 15px
+    margin-bottom: 15px
+    color: $primary-color
+  &-picture
+    position: relative
+    height: 233px
+    width: 100%
+    background-color: #363636
+    img
+      width: 100%
+      height: 100%
+  &-type
+    position: absolute
+    bottom: 0
+    right: 0
+    font-size: 12px
+    font-weight: 700
+    background-color: $green-color
+    padding: 8px 11px 5px 10px
+    color: white
+  &-type-orange
+    @extend .card-type
+    background-color: $orange-color
+  &-title
+    width: 100%
+    font-size: 20px
+    font-weight: 700
+    line-height: 27px
+  &-address
+    font-size: 16px
+    font-weight: 400
+    margin-top: 5px
+  &-price
+    margin-top: 15px
+    font-weight: 400
+    font-size: 16px
+    line-height: 10px
+
+

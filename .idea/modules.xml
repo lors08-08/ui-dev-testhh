@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../JavaScript(6) React Pro/finalchat2.0/.idea/finalchat2.0.iml" filepath="$PROJECT_DIR$/../../JavaScript(6) React Pro/finalchat2.0/.idea/finalchat2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../MyProjects/wildfiretracker/.idea/naturaldisasters.iml" filepath="$PROJECT_DIR$/../../MyProjects/wildfiretracker/.idea/naturaldisasters.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/uidev-testhh.iml" filepath="$PROJECT_DIR$/.idea/uidev-testhh.iml" />
     </modules>
   </component>

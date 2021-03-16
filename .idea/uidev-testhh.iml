@@ -9,5 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="naturaldisasters" />
+    <orderEntry type="module" module-name="finalchat2.0" />
   </component>
 </module>
